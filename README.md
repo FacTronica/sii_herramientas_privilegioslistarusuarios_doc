@@ -1,111 +1,178 @@
-# 🚀 API Factronica - Listar Usuarios con Privilegios SII Chile
+::: {align="center"}
+# 🚀 API Factronica SII Chile
+
+### Integración directa con el Servicio de Impuestos Internos para sistemas de Factura Electrónica
 
 ```{=html}
-<p align="center">
+<p>
 ```
-`<b>`{=html}API para integración con SII Chile Factura
-Electrónica`</b>`{=html}`<br>`{=html} Consulta usuarios autorizados y
-privilegios asociados en ambientes SII.
+API profesional para consultar usuarios autorizados y privilegios SII
+Chile mediante integración REST JSON.
 ```{=html}
 </p>
 ```
+`<br>`{=html}
+
+`<img src="https://img.shields.io/badge/API-REST-blue?style=for-the-badge">`{=html}
+`<img src="https://img.shields.io/badge/SII-Chile-red?style=for-the-badge">`{=html}
+`<img src="https://img.shields.io/badge/JSON-Integration-green?style=for-the-badge">`{=html}
+:::
 
 ------------------------------------------------------------------------
 
-## 📌 Descripción
+## 📖 Descripción
 
 **API Factronica - Listar Usuarios con Privilegios SII Chile** permite
-consultar los usuarios que poseen permisos configurados en el **Servicio
-de Impuestos Internos (SII Chile)** para operar con documentos
-tributarios electrónicos.
+integrar sistemas propios con el ecosistema tributario chileno para
+consultar usuarios autorizados dentro del SII.
 
-Pensada para:
+Pensada para integradores, desarrolladores y empresas que necesitan
+automatizar procesos relacionados con:
 
--   Integradores de sistemas
--   Empresas con software propio
--   Desarrolladores
--   Sistemas ERP / Facturación electrónica
--   Automatización de procesos tributarios
-
-------------------------------------------------------------------------
-
-## ✨ Características
-
-✅ Consulta usuarios autorizados SII\
-✅ Compatible con ambiente certificación y producción\
-✅ Integración mediante JSON API\
-✅ Respuestas estructuradas en JSON\
-✅ Fácil integración con PHP, Node.js, Java, Python y cualquier lenguaje
-compatible con HTTP
+-   Factura Electrónica
+-   Boleta Electrónica
+-   Auditorías tributarias
+-   Validación de permisos
+-   Sistemas ERP
 
 ------------------------------------------------------------------------
 
-# 💰 Modalidades
+# ⚡ Características principales
 
-## API SDK - Pago Único
+```{=html}
+<table>
+```
+```{=html}
+<tr>
+```
+```{=html}
+<td width="50%">
+```
+### 🔐 Seguridad
 
-Ideal para integradores que necesitan instalar la API en sus propios
-servidores.
+-   Comunicación HTTPS
+-   Uso de Token API
+-   Control de acceso
+-   Procesos auditables
+
+```{=html}
+</td>
+```
+```{=html}
+<td width="50%">
+```
+### 🚀 Integración
+
+-   API REST
+-   Peticiones JSON
+-   Respuestas estructuradas
+-   Compatible con cualquier lenguaje
+
+```{=html}
+</td>
+```
+```{=html}
+</tr>
+```
+```{=html}
+<tr>
+```
+```{=html}
+<td>
+```
+### 🏢 Ambientes SII
+
+✅ Certificación\
+✅ Producción
+
+```{=html}
+</td>
+```
+```{=html}
+<td>
+```
+### 🧩 Compatible
+
+PHP\
+Node.js\
+Java\
+Python\
+.NET
+
+```{=html}
+</td>
+```
+```{=html}
+</tr>
+```
+```{=html}
+</table>
+```
+
+------------------------------------------------------------------------
+
+# 💼 Modalidades disponibles
+
+## 🖥️ API SDK - Instalación propia
+
+Para empresas que desean controlar completamente su infraestructura.
 
 Incluye:
 
--   Código fuente API
--   Personalización según procesos propios
--   Control total de infraestructura
--   Sin límites de consultas dependiendo del servidor propio
--   Posibilidad de ofrecer servicio API a clientes finales
+✅ Código fuente\
+✅ Instalación en servidor propio\
+✅ Personalización\
+✅ Independencia de proveedores externos
 
-Valor referencial:
+### Precio
 
-    $100.000 + IVA Pago Único
+    $100.000 + IVA
+    Pago único
 
 ------------------------------------------------------------------------
 
-## API SaaS - Servicio Mensual
+## ☁️ API SaaS - Servicio administrado
 
-Usa la API como servicio sin preocuparse por instalación ni
-mantenimiento.
+Utiliza la API sin preocuparte de servidores ni actualizaciones.
 
 Incluye:
 
--   Acceso a la Suite API Factronica
--   Actualizaciones permanentes
--   Nuevas funcionalidades
--   Disponibilidad administrada
+✅ Acceso Suite API Factronica\
+✅ Actualizaciones permanentes\
+✅ Nuevas funcionalidades\
+✅ Servicio administrado
 
-Valor referencial:
+### Precio
 
     1 UF mensual
 
 ------------------------------------------------------------------------
 
-# 🌎 Ambientes soportados
-
-  Ambiente   Uso
-  ---------- -------------------------
-  Maullín    Certificación SII Chile
-  Palena     Producción SII Chile
-
-------------------------------------------------------------------------
-
 # 🔄 Flujo de integración
 
-1.  Crear petición JSON
-2.  Enviar petición HTTP POST
-3.  Recibir respuesta API
-4.  Procesar información obtenida
+``` text
+Sistema Cliente
+
+      |
+      v
+
+API Factronica
+
+      |
+      v
+
+SII Chile
+```
 
 ------------------------------------------------------------------------
 
-# 1) Crear petición JSON
-
-Ejemplo:
+# 📌 Crear petición JSON
 
 ``` json
 {
-  "TOKEN": "-token-acceso-api-",
+  "TOKEN": "-token-api-",
   "RUT": "-rut-empresa-",
-  "Clave": "-clave-sii-empresa",
+  "Clave": "-clave-sii-",
   "Periodo": "202602",
   "CodTipoDoc": "3941"
 }
@@ -113,112 +180,76 @@ Ejemplo:
 
 ------------------------------------------------------------------------
 
-# 2) Enviar petición
+# 📡 Ejecutar consulta API
 
-Ejemplo utilizando CURL:
+Ejemplo CURL:
 
 ``` bash
-curl -X POST "https://dev.factronica.cl/api/sii_herramientas_boletaobtenerlistado/index.php" \
+curl -X POST \
+"https://dev.factronica.cl/api/sii_herramientas_boletaobtenerlistado/index.php" \
 -H "Content-Type: application/json" \
 -d '
 {
-  "token_api":"su-api-key",
-  "rutpyme":"11111111",
-  "rutpyme_dv":"1",
-  "rutcertificado":"22222222",
-  "rutcertificado_dv":"2",
-  "certificado_clave":"clave-certificado",
-  "certificado_llavepublica":"llave-publica-pem",
-  "certificado_llaveprivada":"llave-privada-pem"
+ "token_api":"API_KEY",
+ "rutpyme":"11111111",
+ "rutpyme_dv":"1"
 }'
-```
-
-También puedes enviar un archivo JSON:
-
-``` bash
-curl -X POST "URL_API" \
--H "Content-Type: application/json" \
--d @datos_json.json
 ```
 
 ------------------------------------------------------------------------
 
-# 3) Respuesta API
-
-Ejemplo respuesta exitosa:
+# 📥 Respuesta API
 
 ``` json
 {
-  "codigo":200,
-  "estado":"OK",
-  "token":"2F92FOHS3NHSX",
-  "datos":[
-    {
-      "rut":"11111111-2",
-      "nombre":"PEDRO PICAPIEDRAS",
-      "administrador":"S",
-      "solicitar_folios":"S",
-      "anular_folios":"S",
-      "firmar_documentos":"S",
-      "enviar_documentos":"S",
-      "consulta":"S"
-    }
-  ]
+ "codigo":200,
+ "estado":"OK",
+ "token":"ABC123",
+ "datos":[
+   {
+    "rut":"11111111-2",
+    "nombre":"USUARIO DEMO",
+    "administrador":"S",
+    "firmar_documentos":"S",
+    "consulta":"S"
+   }
+ ]
 }
 ```
 
 ------------------------------------------------------------------------
 
-# 🧩 Casos de uso
+# 🎯 Casos de uso
 
--   Validar usuarios autorizados antes de emitir documentos
--   Sincronizar permisos SII con sistemas internos
--   Auditoría tributaria
--   Integraciones ERP
--   Plataformas de facturación electrónica
-
-------------------------------------------------------------------------
-
-# 🏗️ Arquitectura recomendada
-
-    Sistema Cliente
-           |
-           |
-           v
-    API Factronica
-           |
-           |
-           v
-    SII Chile
+  Cliente             Uso
+  ------------------- ---------------------------
+  ERP                 Sincronización automática
+  Software Contable   Validación usuarios
+  Integradores        Crear soluciones SII
+  Empresas            Control interno
 
 ------------------------------------------------------------------------
 
-# 🔐 Seguridad
+# 🌎 Ambientes
 
-Recomendaciones:
-
--   Mantener protegido el token API
--   No publicar credenciales SII
--   Usar HTTPS
--   Registrar logs de integración
--   Controlar acceso por aplicación
+  Ambiente   Descripción
+  ---------- -------------------
+  Maullín    Certificación SII
+  Palena     Producción SII
 
 ------------------------------------------------------------------------
 
-# 📞 Soporte
+# 🛠️ Requisitos
 
-Proyecto desarrollado por **Factronica**.
-
-Repositorio:
-
-https://github.com/FacTronica
+-   Acceso API Factronica
+-   Credenciales SII válidas
+-   Servidor con salida HTTPS
+-   Cliente HTTP
 
 ------------------------------------------------------------------------
 
-```{=html}
-<p align="center">
-```
-Made with ❤️ para integraciones SII Chile
-```{=html}
-</p>
-```
+::: {align="center"}
+## Factronica API Suite
+
+Construyendo integraciones modernas con SII Chile 🇨🇱
+:::
