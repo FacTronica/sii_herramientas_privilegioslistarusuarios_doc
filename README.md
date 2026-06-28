@@ -1,22 +1,10 @@
-::: {align="center"}
 # 🚀 API Factronica SII Chile
 
 ### Integración directa con el Servicio de Impuestos Internos para sistemas de Factura Electrónica
-
-```{=html}
-<p>
-```
+ 
 API profesional para consultar usuarios autorizados y privilegios SII
 Chile mediante integración REST JSON.
-```{=html}
-</p>
-```
-`<br>`{=html}
-
-`<img src="https://img.shields.io/badge/API-REST-blue?style=for-the-badge">`{=html}
-`<img src="https://img.shields.io/badge/SII-Chile-red?style=for-the-badge">`{=html}
-`<img src="https://img.shields.io/badge/JSON-Integration-green?style=for-the-badge">`{=html}
-:::
+ 
 
 ------------------------------------------------------------------------
 
@@ -247,9 +235,6 @@ curl -X POST \
 -   Cliente HTTP
 
 ------------------------------------------------------------------------
-
-::: {align="center"}
 ## Factronica API Suite
 
 Construyendo integraciones modernas con SII Chile 🇨🇱
-:::
