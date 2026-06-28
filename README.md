@@ -27,58 +27,25 @@ automatizar procesos relacionados con:
 
 # ⚡ Características principales
 
-```{=html}
-<table>
-```
-```{=html}
-<tr>
-```
-```{=html}
-<td width="50%">
-```
 ### 🔐 Seguridad
 
 -   Comunicación HTTPS
 -   Uso de Token API
 -   Control de acceso
 -   Procesos auditables
-
-```{=html}
-</td>
-```
-```{=html}
-<td width="50%">
-```
+ 
 ### 🚀 Integración
 
 -   API REST
 -   Peticiones JSON
 -   Respuestas estructuradas
 -   Compatible con cualquier lenguaje
-
-```{=html}
-</td>
-```
-```{=html}
-</tr>
-```
-```{=html}
-<tr>
-```
-```{=html}
-<td>
-```
+ 
 ### 🏢 Ambientes SII
 
 ✅ Certificación\
 ✅ Producción
 
-```{=html}
-</td>
-```
-```{=html}
-<td>
-```
 ### 🧩 Compatible
 
 PHP\
@@ -86,16 +53,7 @@ Node.js\
 Java\
 Python\
 .NET
-
-```{=html}
-</td>
-```
-```{=html}
-</tr>
-```
-```{=html}
-</table>
-```
+ETC... 
 
 ------------------------------------------------------------------------
 
@@ -237,4 +195,6 @@ curl -X POST \
 ------------------------------------------------------------------------
 ## Factronica API Suite
 
-Construyendo integraciones modernas con SII Chile 🇨🇱
+Construyendo integraciones modernas con SII Chile 🇨🇱  
+Whatsapp: +56926213032
+Correo: contacto@factronica.cl
